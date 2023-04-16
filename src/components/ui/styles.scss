@@ -1,0 +1,81 @@
+// @import '../../index.css';
+
+.Button {
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	transition: 0.1s ease-in-out;
+
+	&:hover {
+		opacity: 0.9;
+	}
+	&:active {
+		opacity: 0.7;
+	}
+
+	&.sm {
+		font-size: 0.9rem;
+		padding: 8px 12px;
+	}
+	&.md {
+		padding: 10px 20px;
+		font-size: 1rem;
+	}
+	&.primary {
+		background-color: #5d5d5d;
+		color: #fff;
+	}
+	&.secondary {
+		background-color: #dbdbdb;
+		color: #2d2d2d;
+	}
+	&.wide {
+		display: block;
+		width: 100%;
+	}
+	&.marginLeft {
+		margin-left: 1rem;
+	}
+	&.marginRight {
+		margin-right: 1rem;
+	}
+}
+
+.TextField {
+	width: 100%;
+	position: relative;
+	
+	label {
+		display: flex;
+		align-items: center;
+	}
+	input {
+		background-color: #404040;
+		border: none;
+		padding: 15px 20px;
+		border-radius: 10px;
+		color: var(--text-color);
+		outline: 1px solid rgb(0 0 0 / 10%);
+		transition: 0.2s ease-in-out;
+		width: 100%;
+
+		&:focus {
+			border: none;
+			outline-width: 4px;
+		}
+	}
+
+	.labelText {
+		margin-bottom: 0.4rem;
+		display: block;
+	}
+	.labelTextLeft {
+		font-size: 1.2rem;
+		margin-right: 1rem;
+		font-weight: bold;
+		opacity: 0.6;
+		width: 3.3rem;
+		text-align: center;
+	}
+	
+}
